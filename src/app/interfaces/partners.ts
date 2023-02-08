@@ -4,5 +4,10 @@ export interface Partners {
   year: string;
   employees: number;
   industry: string;
-  revenuedetails: any;
+  revenuedetails: {
+    year: string;
+    profit: number;
+    turnover: number;
+    crossmargin: string;
+  }[];
 }

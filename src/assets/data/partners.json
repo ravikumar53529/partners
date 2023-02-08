@@ -10,27 +10,27 @@
            "year": "2021-2022",
            "profit":150222,
            "turnover":15222,
-           "cross-margin":152222
+           "crossmargin":152222
 
         },
         {
             "year": "2020-2021",
             "profit":150222,
             "turnover":15222,
-            "cross-margin":152222
+            "crossmargin":152222
  
          },{
             "year": "2019-2020",
             "profit":150222,
             "turnover":15222,
-            "cross-margin":152222
+            "crossmargin":152222
  
          },
          {
             "year": "2018-2019",
             "profit":150222,
             "turnover":15222,
-            "cross-margin":152222
+            "crossmargin":152222
  
          }
 ]

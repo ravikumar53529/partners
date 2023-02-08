@@ -24,9 +24,9 @@
             <td>
               <a routerLink="/partners-details">{{ data.companyname }}</a>
             </td>
-            <td>{{ data.revenue }}</td>
+            <td>{{ data.revenue | currency : "USD" }}</td>
             <td>{{ data.year }}</td>
-            <td>{{ data.employees }}</td>
+            <td>{{ data.employees | number }}</td>
             <td>{{ data.industry }}</td>
           </tr>
         </tbody>
