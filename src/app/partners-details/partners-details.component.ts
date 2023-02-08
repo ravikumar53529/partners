@@ -14,7 +14,6 @@ export class PartnersDetailsComponent implements OnInit {
       this.partnersDetails = data;
       for (let x of this.partnersDetails) {
         for (let y of x.revenuedetails) {
-          console.log(y);
         }
       }
     });
