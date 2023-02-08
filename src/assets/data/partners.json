@@ -1,0 +1,78 @@
+[
+    {
+    "companyname":"walmart",
+    "revenue":572754,
+    "year":"July 2, 1962",
+    "employees":2300000,
+    "industry":"retail",
+    "revenuedetails":[
+        {
+           "year": "2021-2022",
+           "profit":150222,
+           "turnover":15222,
+           "cross-margin":152222
+
+        },
+        {
+            "year": "2020-2021",
+            "profit":150222,
+            "turnover":15222,
+            "cross-margin":152222
+ 
+         },{
+            "year": "2019-2020",
+            "profit":150222,
+            "turnover":15222,
+            "cross-margin":152222
+ 
+         },
+         {
+            "year": "2018-2019",
+            "profit":150222,
+            "turnover":15222,
+            "cross-margin":152222
+ 
+         }
+]
+
+},
+{
+    "companyname":"Amazon",
+    "revenue":469822	,
+    "year":"July 5, 1994",
+    "employees":1608000,
+    "industry":"retail"
+},
+{
+    "companyname":"State Grid",
+    "revenue":460616.9	,
+    "year":"2002",
+    "employees":871145,
+    "industry":"Electricity"
+},
+{
+    "companyname":"Apple",
+    "revenue":365817	,
+    "year":"April 1, 1976",
+    "employees":154000,
+    "industry":"Electronics"
+},
+{
+    "companyname":"Toyata",
+    "revenue":365817	,
+    "year":"August 28, 1937",
+    "employees":372817,
+    "industry":"Automotive"
+},
+{
+    "companyname":"samsung",
+    "revenue":244334.9	,
+    "year":"August 28, 1937",
+    "employees":266673,
+    "industry":"Electronics"
+}
+
+
+
+
+]
