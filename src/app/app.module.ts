@@ -8,12 +8,16 @@ import { PartnersDetailsComponent } from './partners-details/partners-details.co
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     PartnersComponent,
     PartnersDetailsComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

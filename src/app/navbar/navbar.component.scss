@@ -1,0 +1,30 @@
+.navbar {
+  width: 100%;
+  background-color: black;
+  height: 80px;
+  .navbar-brand {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    margin-left: 250px;
+  }
+  .logout {
+    margin-left: 90%;
+    font-size: 15px;
+    border: 2px solid rgb(253, 249, 249);
+    padding: 2px;
+    background: linear-gradient(
+      rgb(176, 145, 145),
+      rgb(144, 180, 144),
+      rgb(171, 171, 145)
+    );
+    border-radius: 10px;
+  }
+  .logout a:hover {
+    background: linear-gradient(
+      rgb(190, 132, 132),
+      rgb(144, 180, 144),
+      rgb(171, 171, 145)
+    );
+    font-size: 16px;
+  }
+}

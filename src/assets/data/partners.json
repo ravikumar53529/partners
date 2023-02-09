@@ -1,78 +1,518 @@
 [
-    {
-    "companyname":"walmart",
-    "revenue":572754,
-    "year":"July 2, 1962",
-    "employees":2300000,
-    "industry":"retail",
-    "revenuedetails":[
-        {
-           "year": "2021-2022",
-           "profit":150222,
-           "turnover":15222,
-           "crossmargin":152222
-
-        },
-        {
-            "year": "2020-2021",
-            "profit":150222,
-            "turnover":15222,
-            "crossmargin":152222
- 
-         },{
-            "year": "2019-2020",
-            "profit":150222,
-            "turnover":15222,
-            "crossmargin":152222
- 
-         },
-         {
-            "year": "2018-2019",
-            "profit":150222,
-            "turnover":15222,
-            "crossmargin":152222
- 
-         }
-]
-
-},
-{
-    "companyname":"Amazon",
-    "revenue":469822	,
-    "year":"July 5, 1994",
-    "employees":1608000,
-    "industry":"retail"
-},
-{
-    "companyname":"State Grid",
-    "revenue":460616.9	,
-    "year":"2002",
-    "employees":871145,
-    "industry":"Electricity"
-},
-{
-    "companyname":"Apple",
-    "revenue":365817	,
-    "year":"April 1, 1976",
-    "employees":154000,
-    "industry":"Electronics"
-},
-{
-    "companyname":"Toyata",
-    "revenue":365817	,
-    "year":"August 28, 1937",
-    "employees":372817,
-    "industry":"Automotive"
-},
-{
-    "companyname":"samsung",
-    "revenue":244334.9	,
-    "year":"August 28, 1937",
-    "employees":266673,
-    "industry":"Electronics"
-}
-
-
-
-
+  {
+    "id": 1,
+    "companyname": "walmart",
+    "revenue": 572754,
+    "year": "July 2, 1962",
+    "employees": 2300000,
+    "industry": "retail",
+    "revenuedetails": [
+      {
+        "year": "2021-2022",
+        "profit": 150222,
+        "turnover": 150222,
+        "crossmargin": 252222
+      },
+      {
+        "year": "2020-2021",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2019-2020",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2018-2019",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      }
+    ],
+    "employeedetails": [
+      {
+        "employeename": "ravi",
+        "experience": 5,
+        "role": "Manager",
+        "domain": "Marketing"
+      },
+      {
+        "employeename": "ramya",
+        "experience": 10,
+        "role": "HR",
+        "domain": "MARKETING"
+      },
+      {
+        "employeename": "ramesh",
+        "experience": 11,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "IT"
+      },
+      {
+        "employeename": "suresh",
+        "experience": 10,
+        "role": "CEO",
+        "domain": "Marketing"
+      }
+    ],
+    "industrydetails": [
+      {
+        "branches": "5",
+        "headquarters": "America",
+        "type": "retails",
+        "founder": "amith"
+      },
+      {
+        "branches": "2",
+        "headquarters": "England",
+        "type": "stores",
+        "founder": "siva"
+      },
+      {
+        "branches": "10",
+        "headquarters": "delhi",
+        "type": "healthcare",
+        "founder": "ramu"
+      },
+      {
+        "branches": "10",
+        "headquarters": "america",
+        "type": "retails",
+        "founder": "Abdhul"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "companyname": "Amazon",
+    "revenue": 469822,
+    "year": "July 5, 1994",
+    "employees": 1608000,
+    "industry": "retail",
+    "revenuedetails": [
+      {
+        "year": "2021-2022",
+        "profit": 160222,
+        "turnover": 11222,
+        "crossmargin": 22222
+      },
+      {
+        "year": "2020-2021",
+        "profit": 152222,
+        "turnover": 15622,
+        "crossmargin": 153222
+      },
+      {
+        "year": "2019-2020",
+        "profit": 10222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2018-2019",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      }
+    ],
+    "employeedetails": [
+      {
+        "employeename": "shubham",
+        "experience": 15,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "RAECT"
+      },
+      {
+        "employeename": "varun",
+        "experience": 7,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ANGULAR"
+      },
+      {
+        "employeename": "VAMSI",
+        "experience": 5,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ANGULAR"
+      },
+      {
+        "employeename": "AGBHAR",
+        "experience": 15,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ANGULAR"
+      }
+    ],
+    "industrydetails": [
+      {
+        "branches": "5",
+        "headquarters": "CHINA",
+        "type": "retails",
+        "founder": "AKASH"
+      },
+      {
+        "branches": "5",
+        "headquarters": "USA",
+        "type": "software",
+        "founder": "xyz"
+      },
+      {
+        "branches": "5",
+        "headquarters": "london",
+        "type": "retails",
+        "founder": "amith"
+      },
+      {
+        "branches": "7",
+        "headquarters": "hyderabad",
+        "type": "healthcare",
+        "founder": "sumesh"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "companyname": "State Grid",
+    "revenue": 460616.9,
+    "year": "2002",
+    "employees": 871145,
+    "industry": "Electricity",
+    "revenuedetails": [
+      {
+        "year": "2021-2022",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2020-2021",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2019-2020",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2018-2019",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      }
+    ],
+    "employeedetails": [
+      {
+        "employeename": "siva",
+        "experience": 5,
+        "role": "CEO",
+        "domain": "ELECTRICAL"
+      },
+      {
+        "employeename": "ARUN",
+        "experience": 7,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ELECTRICAL"
+      },
+      {
+        "employeename": "ANUP",
+        "experience": 8,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "MARKETING"
+      },
+      {
+        "employeename": "ANKITH",
+        "experience": 12,
+        "role": "ELECTRICAL ENGINEER",
+        "domain": "ELECTRICAL"
+      }
+    ],
+    "industrydetails": [
+      {
+        "branches": "1",
+        "headquarters": "DELHI",
+        "type": "ELECTRICALS STORE",
+        "founder": "AMITH"
+      },
+      {
+        "branches": "8",
+        "headquarters": "GUJARATH",
+        "type": "retails",
+        "founder": "SONY"
+      },
+      {
+        "branches": "5",
+        "headquarters": "DELHI",
+        "type": "MANUFACURING",
+        "founder": "AMRUTH"
+      },
+      {
+        "branches": "4",
+        "headquarters": "USA",
+        "type": "HOSPITAL",
+        "founder": "GRACE"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "companyname": "Apple",
+    "revenue": 365817,
+    "year": "April 1, 1976",
+    "employees": 154000,
+    "industry": "Electronics",
+    "revenuedetails": [
+      {
+        "year": "2021-2022",
+        "profit": 10222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2020-2021",
+        "profit": 1500222,
+        "turnover": 162222,
+        "crossmargin": 122222
+      },
+      {
+        "year": "2019-2020",
+        "profit": 125222,
+        "turnover": 13222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2018-2019",
+        "profit": 16622,
+        "turnover": 12222,
+        "crossmargin": 152222
+      }
+    ],
+    "employeedetails": [
+      {
+        "employeename": "AKNITH",
+        "experience": 10,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ANGULAR and react"
+      },
+      {
+        "employeename": "akash",
+        "experience": 10,
+        "role": "CEO",
+        "domain": "ANGULAR"
+      },
+      {
+        "employeename": "AMRUTH",
+        "experience": 4,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "REACT"
+      },
+      {
+        "employeename": "DAS",
+        "experience": 5,
+        "role": "ENGINEER",
+        "domain": "ANGULAR"
+      }
+    ],
+    "industrydetails": [
+      {
+        "branches": "2",
+        "headquarters": "DELHI",
+        "type": "retails",
+        "founder": "ravi"
+      },
+      {
+        "branches": "5",
+        "headquarters": "chennai",
+        "type": "healthcare",
+        "founder": "soman"
+      },
+      {
+        "branches": "4",
+        "headquarters": "kerala",
+        "type": "marketing",
+        "founder": "siva"
+      },
+      {
+        "branches": "10",
+        "headquarters": "hyderbad",
+        "type": "retails",
+        "founder": "ankith"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "companyname": "Toyata",
+    "revenue": 365817,
+    "year": "August 28, 1937",
+    "employees": 372817,
+    "industry": "Automotive",
+    "revenuedetails": [
+      {
+        "year": "2021-2022",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2020-2021",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2019-2020",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2018-2019",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      }
+    ],
+    "employeedetails": [
+      {
+        "employeename": "ravi",
+        "experience": 15,
+        "role": "Automobile ENGINEER",
+        "domain": "automobile"
+      },
+      {
+        "employeename": "siva",
+        "experience": 10,
+        "role": " ENGINEER",
+        "domain": "automobile"
+      },
+      {
+        "employeename": "TEJA",
+        "experience": 10,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ANGULAR"
+      },
+      {
+        "employeename": "MAHESH",
+        "experience": 15,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "IT"
+      }
+    ],
+    "industrydetails": [
+      {
+        "branches": "10",
+        "headquarters": "DELHI",
+        "type": "retails",
+        "founder": "SIVA"
+      },
+      {
+        "branches": "15",
+        "headquarters": "HYDERABAD",
+        "type": "MARKETING",
+        "founder": "RAVI"
+      },
+      {
+        "branches": "8",
+        "headquarters": "KERALA",
+        "type": "retails",
+        "founder": "VAMSI"
+      },
+      {
+        "branches": "1",
+        "headquarters": "DELHI",
+        "type": "retials",
+        "founder": "xyz"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "companyname": "samsung",
+    "revenue": 244334.9,
+    "year": "August 28, 1937",
+    "employees": 266673,
+    "industry": "Electronics",
+    "revenuedetails": [
+      {
+        "year": "2021-2022",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2020-2021",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2019-2020",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      },
+      {
+        "year": "2018-2019",
+        "profit": 150222,
+        "turnover": 15222,
+        "crossmargin": 152222
+      }
+    ],
+    "employeedetails": [
+      {
+        "employeename": "vamsi",
+        "experience": 6,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ANGULAR"
+      },
+      {
+        "employeename": "teja",
+        "experience": 5,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "REACT"
+      },
+      {
+        "employeename": "amruth",
+        "experience": 11,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "fullstack"
+      },
+      {
+        "employeename": "adani",
+        "experience": 10,
+        "role": "SOFTWARE ENGINEER",
+        "domain": "ANGULAR"
+      }
+    ],
+    "industrydetails": [
+      {
+        "branches": "18",
+        "headquarters": "delhi",
+        "type": "healthcare",
+        "founder": "siva"
+      },
+      {
+        "branches": "5",
+        "headquarters": "delhi",
+        "type": "automobile",
+        "founder": "siva"
+      },
+      {
+        "branches": "2",
+        "headquarters": "hyderabad",
+        "type": "marketing",
+        "founder": "mahesh"
+      },
+      {
+        "branches": "8",
+        "headquarters": "japan",
+        "type": "Mobile stores",
+        "founder": "pavan"
+      }
+    ]
+  }
 ]

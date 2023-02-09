@@ -14,9 +14,6 @@ export class PartnersComponent implements OnInit {
   ngOnInit(): void {
     this.partnersServiceRef.getPartnersData().subscribe((data) => {
       this.partnersData = data;
-      for (let x of this.partnersData) {
-        console.log(x.companyname);
-      }
     });
   }
 }

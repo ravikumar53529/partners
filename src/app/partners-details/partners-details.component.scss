@@ -1,5 +1,32 @@
-.body-nav,
-ul {
-  display: flex;
-  justify-content: space-between;
+* {
+  th,
+  td {
+    text-align: center;
+    height: 50px;
+  }
+}
+.body {
+  .body-heading {
+    height: 50px;
+    .items {
+      display: flex;
+      justify-content: space-between;
+      .body-btn {
+        width: 200px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+      .body-btn:hover {
+        background-color: rgb(63, 59, 59);
+      }
+    }
+  }
+  .detailed-table {
+    margin-left: 100px;
+  }
+}
+.footer {
+  margin-top: 300px;
 }

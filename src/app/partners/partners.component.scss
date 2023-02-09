@@ -2,23 +2,14 @@
   padding: 0px;
   margin: 0px;
 }
-.partners {
-  .header {
-    width: 100%;
-    height: 50px;
-    background-color: rgb(33, 35, 34);
-  }
-  .body {
-    width: 100%;
-    height: auto;
-    border: 3px solid rgb(173, 165, 165);
-    margin: 5px;
-  }
-  .footer {
-    width: 100%;
-    height: 200px;
-    background-color: rgb(33, 35, 34);
-    display: flex;
-    justify-content: space-around;
-  }
+.container {
+  margin-left: 200px;
+}
+th,
+td {
+  text-align: center;
+  height: 40px;
+}
+.footer {
+  margin-top: 200px;
 }

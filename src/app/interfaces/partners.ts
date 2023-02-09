@@ -1,4 +1,5 @@
 export interface Partners {
+  id: number;
   companyname: string;
   revenue: number;
   year: string;
@@ -8,6 +9,18 @@ export interface Partners {
     year: string;
     profit: number;
     turnover: number;
-    crossmargin: string;
+    crossmargin: number;
+  }[];
+  employeedetails: {
+    employeename: string;
+    experience: number;
+    role: string;
+    domain: string;
+  }[];
+  industrydetails: {
+    branches: number;
+    headquarters: string;
+    type: string;
+    founder: string;
   }[];
 }
