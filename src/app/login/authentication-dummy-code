@@ -1,0 +1,17 @@
+//getUserLoginDetails
+  getUserLoginDetails() {
+    for (let users of this.registeredUsers) {
+      if (
+        users.username === this.loginForm.value['username'] &&
+        users.password === this.loginForm.value['password']
+      ) {
+        Swal.fire('success');
+        this.loginForm.reset();
+        this.routerRef.navigate(['/partners']);
+        break;
+      } else {
+        Swal.fire('user', 'Login Failed', 'error');
+      }
+    }
+  }
+}
