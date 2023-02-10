@@ -10,10 +10,12 @@ import { PartnersServiceService } from '../services/partners-service.service';
 })
 export class PartnersDetailsComponent implements OnInit {
   partnersDetails: Partners[] = [];
+  filteredPartnersDetails: Partners[] = [];
   revenueStatus: boolean = false;
   employeeStatus: boolean = false;
   industryStatus: boolean = false;
   routerId: number = 0;
+  routerIdResponse: number = 0;
   title: string = '';
   revenueDetails: {
     year: string;
@@ -39,16 +41,18 @@ export class PartnersDetailsComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     this.routerId = this.route.snapshot.params['id'];
+    this.routerIdResponse = Number(this.routerId);
     this.partnersServiceRef.getPartnersData().subscribe((data: Partners[]) => {
       this.partnersDetails = data;
-      for (let x of this.partnersDetails) {
-        if (x.id == this.routerId) {
-          this.title = x.companyname;
-          this.revenueDetails = x.revenuedetails;
-          this.employeeDetails = x.employeedetails;
-          this.industryDetails = x.industrydetails;
+      this.partnersDetails.filter((partner) => {
+        if (partner.id === this.routerIdResponse) {
+          this.title = partner.companyname;
+          this.revenueDetails = partner.revenuedetails;
+          this.employeeDetails = partner.employeedetails;
+          this.industryDetails = partner.industrydetails;
+          this.revenueStatus = true;
         }
-      }
+      });
     });
   }
   //revenue

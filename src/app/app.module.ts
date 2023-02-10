@@ -7,7 +7,6 @@ import { PartnersComponent } from './partners/partners.component';
 import { PartnersDetailsComponent } from './partners-details/partners-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import Swal from 'sweetalert2';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 @NgModule({

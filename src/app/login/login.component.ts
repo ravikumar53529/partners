@@ -8,7 +8,7 @@ import {
   Validators,
 } from '@angular/forms';
 import Swal from 'sweetalert2';
-import { Logindata } from '../interfaces/logindata';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,7 +19,6 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   registeredUsers: User[] = [];
   userAuthentication: boolean = false;
-
   //loginform
   loginForm = new FormGroup({
     username: new FormControl('', [
@@ -40,7 +39,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.partnersServiceRef.getCredential().subscribe((data) => {
       this.registeredUsers = data;
-      console.log(this.registeredUsers);
     });
   }
   //Reactive form validations
@@ -50,23 +48,25 @@ export class LoginComponent implements OnInit {
   get userPassword() {
     return this.loginForm.get('password');
   }
-  //getUserLoginDetails
+  //user authentication
   getUserLoginDetails(): void {
-    for (let i = 0; i < this.registeredUsers.length; i++) {
-      console.log(this.loginForm.value['username']);
-      console.log(this.registeredUsers[i].username);
+    this.registeredUsers.filter((users) => {
+      console.log(users);
+    });
+    for (let users of this.registeredUsers) {
       if (
-        this.loginForm.value['username'] === this.registeredUsers[i].username &&
-        this.loginForm.value['password'] === this.registeredUsers[i].password
+        users.username === this.loginForm.value['username'] &&
+        users.password === this.loginForm.value['password']
       ) {
         Swal.fire('success');
-        this.loginForm.reset();
+        this.userAuthentication = true;
+        this.partnersServiceRef.userauthentication(this.userAuthentication);
         this.routerRef.navigate(['/partners']);
         break;
       } else {
         Swal.fire('user', 'Login Failed', 'error');
-        this.loginForm.reset();
       }
     }
+    this.loginForm.reset();
   }
 }

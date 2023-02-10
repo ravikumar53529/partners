@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
-<div class="container">
-  <table class="table-bordered w-75 ms-5 mt-5">
+<div class="partners-table mt-5">
+  <table class="table-bordered w-75">
     <thead>
       <tr>
         <th>Company Name</th>
@@ -13,9 +13,11 @@
     <tbody>
       <tr *ngFor="let data of partnersData; let i = index">
         <td>
-          <a routerLink="/partners-details/{{ data.id }}">{{
-            data.companyname | uppercase
-          }}</a>
+          <a
+            routerLink="/partners-details/{{ data.id }}"
+            class="text-decoration-none"
+            >{{ data.companyname | uppercase }}</a
+          >
         </td>
         <td>{{ data.revenue | currency : "USD" }}</td>
         <td>{{ data.year }}</td>

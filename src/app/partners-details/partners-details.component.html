@@ -1,10 +1,25 @@
 <app-navbar></app-navbar>
-<div class="d-flex justify-content-start">
-  <h3 *ngIf="title" class="fs-2 title mx-3 mt-2">{{ title | uppercase }}</h3>
+<div class="container-fluid d-flex">
+  <div>
+    <h3 *ngIf="title" class="fs-1 title mx-5 mt-3">{{ title | uppercase }}</h3>
+  </div>
+  <div>
+    <div>
+      <button class="partnerbutton mt-3">
+        <a class="text-decoration-none text-white" routerLink="/partners"
+          >Partners</a
+        >
+      </button>
+    </div>
+  </div>
 </div>
-<div class="body mt-5">
-  <div class="container">
-    <div class="body-heading">
+<div clas="container bg-primary">
+  <div class="d-flex justify-content-start"></div>
+</div>
+
+<div class="body mt-4">
+  <div class="container bg-light p-2">
+    <div class="body-heading mt-2">
       <div class="items">
         <div>
           <button class="body-btn" (click)="revenue()">REVENUE</button>
@@ -18,63 +33,63 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid p-5 detailed-table">
-    <table class="table-bordered w-75 ms-5">
-      <ng-container *ngIf="revenueStatus">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th>Turnover</th>
-            <th>Profit</th>
-            <th>Cross Margin</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let data of revenueDetails">
-            <td>{{ data.year }}</td>
-            <td>{{ data.turnover | currency : "USD" }}</td>
-            <td>{{ data.profit | currency : "USD" }}</td>
-            <td>{{ data.crossmargin | currency : "USD" }}</td>
-          </tr>
-        </tbody>
-      </ng-container>
-      <ng-container *ngIf="employeeStatus">
-        <thead>
-          <tr>
-            <th>Employee Name</th>
-            <th>Experience</th>
-            <th>Domain</th>
-            <th>Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let data of employeeDetails">
-            <td>{{ data.employeename | uppercase }}</td>
-            <td>{{ data.experience }}</td>
-            <td>{{ data.domain | uppercase }}</td>
-            <td>{{ data.role | uppercase }}</td>
-          </tr>
-        </tbody>
-      </ng-container>
-      <ng-container *ngIf="industryStatus">
-        <thead>
-          <tr>
-            <th>Branches</th>
-            <th>Headquarters</th>
-            <th>Type</th>
-            <th>Founder</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let data of industryDetails">
-            <td>{{ data.branches }}</td>
-            <td>{{ data.headquarters | uppercase }}</td>
-            <td>{{ data.type | uppercase }}</td>
-            <td>{{ data.founder | uppercase }}</td>
-          </tr>
-        </tbody>
-      </ng-container>
-    </table>
-    <app-footer></app-footer>
-  </div>
 </div>
+<div class="partners-table mt-4">
+  <table class="table-bordered w-75">
+    <ng-container *ngIf="revenueStatus">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Turnover</th>
+          <th>Profit</th>
+          <th>Cross Margin</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of revenueDetails">
+          <td>{{ data.year }}</td>
+          <td>{{ data.turnover | currency : "USD" }}</td>
+          <td>{{ data.profit | currency : "USD" }}</td>
+          <td>{{ data.crossmargin | currency : "USD" }}</td>
+        </tr>
+      </tbody>
+    </ng-container>
+    <ng-container *ngIf="employeeStatus">
+      <thead>
+        <tr>
+          <th>Employee Name</th>
+          <th>Experience</th>
+          <th>Domain</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of employeeDetails">
+          <td>{{ data.employeename | uppercase }}</td>
+          <td>{{ data.experience }}</td>
+          <td>{{ data.domain | uppercase }}</td>
+          <td>{{ data.role | uppercase }}</td>
+        </tr>
+      </tbody>
+    </ng-container>
+    <ng-container *ngIf="industryStatus">
+      <thead>
+        <tr>
+          <th>Branches</th>
+          <th>Headquarters</th>
+          <th>Type</th>
+          <th>Founder</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of industryDetails">
+          <td>{{ data.branches }}</td>
+          <td>{{ data.headquarters | uppercase }}</td>
+          <td>{{ data.type | uppercase }}</td>
+          <td>{{ data.founder | uppercase }}</td>
+        </tr>
+      </tbody>
+    </ng-container>
+  </table>
+</div>
+<app-footer></app-footer>
